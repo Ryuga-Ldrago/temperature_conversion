@@ -1,38 +1,107 @@
+body{
+  background-color: #282c34; 
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+:root{
+  --red-color:red;
+}
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.temp-container{
+  width:60%;
+  margin :auto;
+  background-color:  rgb(80 81 81 / 37%);
+  border: 2px solid var(--red-color); 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 20px;
+  gap: 50px;
+  border-radius: 20px;
+}
+#from{
+  padding: 6px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  background-color: #282c34;
+  color: var(--red-color);
+  border: none;
+}
+
+#to{
+  padding: 6px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #282c34;
+  color: var(--red-color);
+  border-radius: 5px;
+  border: none;
+}
+
+/* .enter-temp,.temp-selector,.temp-btn{
+  border:2px solid black;
+} */
+
+.temp-selector{
+
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 50px;
+  align-items: baseline;
 }
 
-.App-link {
-  color: #61dafb;
+input[type='number']{
+  width: 42%;
+    font-size: 16px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    background-color: #282c34;
+    color:aliceblue;
+    font-weight: 600;
+    border: transparent;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.temp-btn button{
+  width: 20%;
+  font-size: 20px;
+  color: antiquewhite;
+  background: var(--red-color);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  padding: 4px 0px;
+  font-weight: 600;
+  transition: all .7s;
 }
+.temp-btn button:hover{
+    background: transparent;
+    border: 2px solid var(--red-color);
+    transform: scale(0.9);
+    color: var(--red-color);
+  
+}
+
+.output-container{
+  width:60%;
+  margin :50px auto;
+  background-color:  rgb(20 45 33 / 33%);
+  border: 2px solid var(--red-color); 
+  border-radius: 20px;
+  padding: 5px 41px;
+  font-size: 13px;
+}
+
+::placeholder{
+  font-size: 13px;
+}
+
+
+
+.output-container h1{
+  color: var(--red-color);
+  font-family: cursive;
+}
+
+
